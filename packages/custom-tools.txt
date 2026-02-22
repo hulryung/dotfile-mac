@@ -4,6 +4,6 @@ formula|hulryung/xcli/xcli|Xcode CLI helper
 cask|hangulkeychanger|Hangul key changer
 cask|mac-mouse-scroll-is-bulpyun|Fix mouse scroll direction
 cask|claude-rate-widget|Claude rate limit widget
-cask|serial-rs|Serial port tool
+cask|serial-terminal|Serial terminal app
 cask|hwpquicklook|HWP Quick Look preview
 cask|markdown-prism|Markdown preview app
