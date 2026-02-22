@@ -1,0 +1,4 @@
+# Homebrew taps
+# Format: type|name|description
+tap|hulryung/tap|Custom tools tap
+tap|hulryung/xcli|Xcode CLI helper tap

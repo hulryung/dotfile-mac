@@ -1,0 +1,7 @@
+# CLI utilities
+# Format: type|name|description
+formula|jq|JSON processor
+formula|colima|Container runtime for macOS
+formula|vercel-cli|Vercel CLI
+formula|railway|Railway CLI
+formula|render|Render CLI

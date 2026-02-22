@@ -1,0 +1,6 @@
+# GUI applications (casks)
+# Format: type|name|description
+cask|google-drive|Google Drive desktop client
+cask|raycast|Launcher and productivity tool
+cask|iterm2|Terminal emulator
+cask|tailscale|Mesh VPN

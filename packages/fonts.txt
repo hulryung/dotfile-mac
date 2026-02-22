@@ -1,0 +1,3 @@
+# Fonts
+# Format: type|name|description
+cask|font-d2coding-nerd-font|D2Coding Nerd Font

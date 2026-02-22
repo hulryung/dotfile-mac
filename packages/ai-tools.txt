@@ -1,0 +1,5 @@
+# AI CLI tools
+# Format: type|name|description
+cask|claude-code|Anthropic Claude Code CLI
+cask|codex|OpenAI Codex CLI
+formula|gemini-cli|Google Gemini CLI

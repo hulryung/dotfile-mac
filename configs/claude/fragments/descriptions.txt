@@ -1,0 +1,4 @@
+# Fragment descriptions (filename|description)
+permissions.json|bypassPermissions 모드, 위험모드 확인 skip, Co-Author 미표시
+teams.json|Agent Teams 활성화, 팀메이트 tmux 모드
+statusline.json|cc-statusline 커맨드 기반 커스텀 상태줄
