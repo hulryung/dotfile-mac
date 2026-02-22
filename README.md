@@ -17,19 +17,20 @@ dotfile-mac/
 │   ├── utils.sh          # Helper functions
 │   └── gum.sh            # gum TUI wrappers + bash fallback
 ├── packages/
-│   ├── taps.txt          # Homebrew taps
-│   ├── ai-tools.txt      # AI CLI tools
-│   ├── cli-tools.txt     # CLI utilities
-│   ├── custom-tools.txt  # hulryung/tap packages
-│   ├── apps.txt          # GUI apps (casks)
-│   └── fonts.txt         # Fonts
+│   ├── taps.txt          # Homebrew taps (hulryung/tap, hulryung/xcli)
+│   ├── ai-tools.txt      # AI CLI tools (claude-code, codex, gemini-cli)
+│   ├── cli-tools.txt     # CLI utilities (jq, colima, starship, ...)
+│   ├── custom-tools.txt  # hulryung packages (xcli, hangulkeychanger, ...)
+│   ├── apps.txt          # GUI apps (google-drive, raycast, iterm2, ...)
+│   └── fonts.txt         # Fonts (D2Coding Nerd Font)
 └── configs/
     ├── manifest.sh       # Config deployment registry
-    ├── claude/            # Claude Code settings
-    │   ├── settings.json  # Full template (fallback)
-    │   └── fragments/     # Granular settings (merged with jq)
-    ├── bash/              # Shell config
-    └── git/               # Git config
+    ├── bash/              # .bash_profile (Homebrew, starship, aliases)
+    ├── git/               # .gitconfig (rebase, autoSetupRemote, aliases)
+    ├── starship/          # starship.toml (Gruvbox Rainbow preset)
+    └── claude/            # Claude Code settings
+        ├── settings.json  # Full template (fallback)
+        └── fragments/     # Granular settings (merged with jq)
 ```
 
 ## How It Works
@@ -72,6 +73,10 @@ fragments/
 ├── teams.json         # Agent Teams 활성화, tmux 모드
 └── statusline.json    # cc-statusline 커맨드 기반 상태줄
 ```
+
+### Starship Prompt
+
+[Gruvbox Rainbow](https://starship.rs/presets/gruvbox-rainbow) 프리셋 사용. D2Coding Nerd Font 필요.
 
 ## Features
 
