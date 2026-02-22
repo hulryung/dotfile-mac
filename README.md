@@ -38,7 +38,7 @@ dotfile-mac/
 
 1. Homebrew 설치 (없으면)
 2. `gum` 설치 (없으면, bash fallback 포함)
-3. Homebrew bash를 기본 쉘로 변경 (확인 후)
+3. `/bin/bash`를 기본 쉘로 변경 (확인 후)
 4. Homebrew taps 추가
 5. 카테고리별 패키지 선택 → 설치
 6. 설정 파일 선택 → 배포
@@ -68,9 +68,9 @@ cask|my-app|My GUI application
 
 ```
 fragments/
-├── permissions.json   # 권한 설정
-├── statusline.json    # 상태줄 설정
-└── ui.json            # UI 설정
+├── permissions.json   # bypassPermissions, 위험모드 skip, Co-Author 미표시
+├── teams.json         # Agent Teams 활성화, tmux 모드
+└── statusline.json    # cc-statusline 커맨드 기반 상태줄
 ```
 
 ## Features

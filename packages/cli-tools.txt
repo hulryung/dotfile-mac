@@ -5,3 +5,4 @@ formula|colima|Container runtime for macOS
 formula|vercel-cli|Vercel CLI
 formula|railway|Railway CLI
 formula|render|Render CLI
+formula|starship|Cross-shell prompt
