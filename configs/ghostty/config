@@ -1,0 +1,4 @@
+command = /bin/bash
+
+keybind = cmd+left=previous_tab
+keybind = cmd+right=next_tab

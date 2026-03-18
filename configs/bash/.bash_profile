@@ -1,5 +1,10 @@
 # ~/.bash_profile - managed by dotfile-mac
 
+# ─── Ghostty Shell Integration ──────────────────────────────
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+  builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/bash/ghostty.bash"
+fi
+
 # ─── Silence macOS zsh warning ──────────────────────────────
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -13,7 +18,14 @@ elif [[ -f /usr/local/bin/brew ]]; then
 fi
 
 # ─── Path ─────────────────────────────────────────────────────
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+export DOTNET_ROOT="$HOME/.dotnet"
+export DOTNET_ROOT_ARM64="$DOTNET_ROOT"
+
+case ":$PATH:" in
+    *":$DOTNET_ROOT:"*) ;;
+    *) export PATH="$DOTNET_ROOT:$PATH" ;;
+esac
 
 # ─── Editor ───────────────────────────────────────────────────
 export EDITOR="vim"
@@ -32,3 +44,6 @@ if command -v starship &>/dev/null; then
 else
     PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 fi
+
+alias vi=nvim
+alias vim=nvim
