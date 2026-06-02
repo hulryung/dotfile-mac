@@ -1,6 +1,7 @@
-[user]
-    name =
-    email =
+# Identity is kept out of this PUBLIC repo. Put name/email in ~/.gitconfig.local
+# (not tracked). See README / after-mac-install journal.
+[include]
+    path = ~/.gitconfig.local
 
 [core]
     editor = vim

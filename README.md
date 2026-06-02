@@ -26,7 +26,7 @@ dotfile-mac/
 └── configs/
     ├── manifest.sh       # Config deployment registry
     ├── bash/              # .bash_profile (Homebrew, starship, aliases)
-    ├── git/               # .gitconfig (rebase, autoSetupRemote, aliases)
+    ├── git/               # .gitconfig (rebase, autoSetupRemote, aliases); identity via ~/.gitconfig.local
     ├── starship/          # starship.toml (Gruvbox Rainbow preset)
     └── claude/            # Claude Code settings
         ├── settings.json  # Full template (fallback)
