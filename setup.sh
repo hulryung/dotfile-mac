@@ -44,16 +44,20 @@ print_header "Default Shell"
 
 current_shell="$(dscl . -read /Users/"$(whoami)" UserShell | awk '{print $2}')"
 
-if [[ "$current_shell" == "/bin/bash" ]]; then
-    print_skip "Default shell is already /bin/bash"
-else
-    if gum_confirm "Change default shell to /bin/bash?"; then
-        chsh -s /bin/bash
-        print_ok "Default shell changed to /bin/bash"
-    else
-        print_skip "Keeping current shell: $current_shell"
-    fi
-fi
+# Both zsh and bash profiles are provided; keep whichever is already in use.
+case "$current_shell" in
+    */zsh|*/bash)
+        print_skip "Using $current_shell (zsh and bash configs both provided)"
+        ;;
+    *)
+        if gum_confirm "Change default shell to /bin/zsh?"; then
+            chsh -s /bin/zsh
+            print_ok "Default shell changed to /bin/zsh"
+        else
+            print_skip "Keeping current shell: $current_shell"
+        fi
+        ;;
+esac
 
 # ─── 4. Taps ─────────────────────────────────────────────────
 

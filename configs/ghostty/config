@@ -1,4 +1,4 @@
-command = /bin/bash
+# Use the login shell (zsh on modern macOS). Set `command = /bin/bash` to force bash.
 
 keybind = cmd+left=previous_tab
 keybind = cmd+right=next_tab
